@@ -14,7 +14,7 @@
 .nav-bar .logo img {
   display: block;
   margin: 8px auto;
-  width: 24px;
+  width: 38px;
   height: auto;
 }
 .nav-bar .logo img.sub-logo {
@@ -42,7 +42,7 @@
   transition: all 0.3s ease-out;
 }
 .nav-bar nav a:hover {
-  color: #ffd700;
+  color: #00ff00;
 }
 .nav-bar nav a:hover svg {
   opacity: 0;
@@ -72,7 +72,7 @@
   content: "CONTACT";
 }
 .nav-bar nav a.active svg {
-  color: #ffd700;
+  color: #00ff00;
 }
 .nav-bar ul {
   position: absolute;
@@ -91,5 +91,5 @@
   line-height: 16px;
 }
 .nav-bar ul li a:hover svg {
-  color: #ffd700;
+  color: #00ff00;
 }/*# sourceMappingURL=sidebar.css.map */
