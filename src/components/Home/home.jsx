@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom'
 import './home.scss';
 import LogoTitle from '../../assets/images/logo-b.png';
 import AnimatedLetters from '../AnimatedLetters/animatedLetters';
+import Logo from './Logo/logo'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = 'rent'.split('');
-    const jobArray = 'a web and software developer'.split('');
 
     useEffect(() => {
         const timerId = setTimeout(() => {
@@ -28,16 +27,17 @@ const Home = () => {
                 <span className={`${letterClass} _12`}></span>
                 <img src={LogoTitle} alt="developer" />
                 <AnimatedLetters letterClass={letterClass}
-                strArray={nameArray}
+                strArray={'rent'.split('')}
                 idx={15} />
                 <br />
                 <AnimatedLetters letterClass={letterClass}
-                strArray={jobArray}
+                strArray={'a web and software developer'.split('')}
                 idx={8} />
                 </h1>
                 <h2>Full Stack</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
+            <Logo />
         </div>
     );
 }
