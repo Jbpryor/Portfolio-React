@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./sidebar.scss";
-import LogoS from "../../assets/images/logo-b.png";
+import LogoB from "../../assets/images/logo-b.png";
 import LogoSubtitle from "../../assets/images/logo_sub.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -10,24 +10,24 @@ import { faFreeCodeCamp, faGithub, faLinkedin } from "@fortawesome/free-brands-s
 const Sidebar = () => (
   <div className="nav-bar">
     <Link className="logo" to="/">
-      <img src={LogoS} alt="logo" />
+      <img src={LogoB} alt="logo" />
       <img className="sub-logo" src={LogoSubtitle} alt="b_rent" />
     </Link>
     <nav>
-      <NavLink exact={true} activeClassName="active" to="/">
+      <NavLink 
+      activeclassname="active" 
+      to="/">
         <FontAwesomeIcon icon={faHome} color="4d4d4e" />
       </NavLink>
       <NavLink
-        exact={true}
-        activeClassName="active"
+        activeclassname="active"
         className="about-link"
         to="/about"
       >
         <FontAwesomeIcon icon={faUser} color="4d4d4e" />
       </NavLink>
       <NavLink
-        exact={true}
-        activeClassName="active"
+        activeclassname="active"
         className="contact-link"
         to="/contact"
       >
