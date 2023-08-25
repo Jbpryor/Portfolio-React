@@ -68,6 +68,9 @@
 .nav-bar nav a.about-link:after {
   content: "ABOUT";
 }
+.nav-bar nav a.portfolio-link:after {
+  content: "PORTFOLIO";
+}
 .nav-bar nav a.contact-link:after {
   content: "CONTACT";
 }

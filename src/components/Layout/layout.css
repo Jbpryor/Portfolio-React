@@ -38,7 +38,9 @@
   animation-delay: 1s;
 }
 
-.container.about-page .text-zone {
+.about-page .text-zone,
+.contact-page .text-zone,
+.portfolio-page .text-zone {
   position: absolute;
   left: 10%;
   top: 50%;
@@ -48,7 +50,9 @@
   display: table-cell;
   max-height: 90%;
 }
-.container.about-page .text-zone h1 {
+.about-page .text-zone h1,
+.contact-page .text-zone h1,
+.portfolio-page .text-zone h1 {
   font-size: 53px;
   font-family: "Coolvetica";
   color: #00ff00;
@@ -58,7 +62,9 @@
   margin-bottom: 40px;
   left: -10px;
 }
-.container.about-page .text-zone h1::before {
+.about-page .text-zone h1::before,
+.contact-page .text-zone h1::before,
+.portfolio-page .text-zone h1::before {
   content: "<h1>";
   font-family: "La Belle Aurore";
   color: #00ff00;
@@ -69,7 +75,9 @@
   opacity: 0.6;
   line-height: 18px;
 }
-.container.about-page .text-zone h1::after {
+.about-page .text-zone h1::after,
+.contact-page .text-zone h1::after,
+.portfolio-page .text-zone h1::after {
   content: "<h1/>";
   font-family: "La Belle Aurore";
   color: #00ff00;
@@ -81,7 +89,9 @@
   margin-left: 20px;
   opacity: 0.6;
 }
-.container.about-page .text-zone p {
+.about-page .text-zone p,
+.contact-page .text-zone p,
+.portfolio-page .text-zone p {
   font-size: 15px;
   color: #fff;
   font-family: sans-serif;
@@ -90,15 +100,23 @@
   min-width: fit-content;
   animation: pulse 1s;
 }
-.container.about-page .text-zone p:nth-of-type(1) {
+.about-page .text-zone p:nth-of-type(1),
+.contact-page .text-zone p:nth-of-type(1),
+.portfolio-page .text-zone p:nth-of-type(1) {
   animation-delay: 1.1s;
 }
-.container.about-page .text-zone p:nth-of-type(2) {
+.about-page .text-zone p:nth-of-type(2),
+.contact-page .text-zone p:nth-of-type(2),
+.portfolio-page .text-zone p:nth-of-type(2) {
   animation-delay: 1.2s;
 }
-.container.about-page .text-zone p:nth-of-type(3) {
+.about-page .text-zone p:nth-of-type(3),
+.contact-page .text-zone p:nth-of-type(3),
+.portfolio-page .text-zone p:nth-of-type(3) {
   animation-delay: 1.3s;
 }
-.container.about-page .text-animate-hover:hover {
+.about-page .text-animate-hover:hover,
+.contact-page .text-animate-hover:hover,
+.portfolio-page .text-animate-hover:hover {
   color: #fff;
 }/*# sourceMappingURL=layout.css.map */

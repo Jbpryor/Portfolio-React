@@ -39,7 +39,8 @@
 }
 
 .about-page,
-.contact-page {
+.contact-page,
+.portfolio-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -102,7 +103,7 @@
                 animation-delay: 1.2s;
             }
 
-            &:nth-of-type(3 ) {
+            &:nth-of-type(3) {
                 animation-delay: 1.3s;
             }
         }
