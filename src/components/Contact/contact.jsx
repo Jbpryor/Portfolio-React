@@ -1,7 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import AnimatedLetters from "../AnimatedLetters/animatedLetters"
+import AnimatedLetters from "../AnimatedLetters/animatedLetters";
 import './contact.scss';
 import emailjs from 'emailjs-com';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css';
+
 
 
 const Contact = () => {
@@ -18,14 +21,14 @@ const Contact = () => {
     const sendEmail = async (e) => {
         e.preventDefault();
 
-        const serviceID = "service_ca48i2m";
+        const serviceID = "service_husq3kf";
         const templateID = "template_q7yi1ac";
         const publicKey = "WVIP6H-6-AW8sHp9L";
 
-        const name = form.current.name.value;
-        const email = form.current.email.value;
-        const subject = form.current.subject.value;
-        const message = form.current.message.value;
+        const name = form.current.elements.name.value;
+        const email = form.current.elements.email.value;
+        const subject = form.current.elements.subject.value;
+        const message = form.current.elements.message.value;
 
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
@@ -61,7 +64,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        words
+                        I'm always looking for new and interesting oportunities. Send something my way!
                     </p>
                     <div className="contact-form">
                         <form ref={form} onSubmit={sendEmail}>
@@ -84,7 +87,23 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
-                </div>    
+                </div>
+                <div className="info-map">
+                    Brent Pryor,
+                    <br />
+                    United States
+                    <br />
+                    Tulsa, Oklahoma 74135
+                    <span>sunyata0601.test@gmail.com</span>
+                </div>
+                <div className="map-wrap">
+                    <MapContainer center={[36.153980, -95.992775]} zoom={13}>
+                        <TileLayer url='https://tile.openstreetmap.org/{z}/{x}/{y}.png' />
+                        <Marker position={[36.153980, -95.992775]}>
+                            <Popup>Brent lives near here</Popup>
+                        </Marker>
+                    </MapContainer>
+                </div>
             </div>
         </>
     )
