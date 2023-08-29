@@ -1,6 +1,6 @@
 .nav-bar {
     background: #181818;
-    width: 60px;
+    width: 85px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -87,6 +87,12 @@
         a.portfolio-link {
             &:after {
                 content: 'PORTFOLIO';
+            }
+        }
+
+        a.certificates-link {
+            &:after {
+                content: 'CERTIFICATES';
             }
         }
 

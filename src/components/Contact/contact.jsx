@@ -21,7 +21,7 @@ const Contact = () => {
     const sendEmail = async (e) => {
         e.preventDefault();
 
-        const serviceID = "service_husq3kf";
+        const serviceID = "service_ca48i2m";
         const templateID = "template_q7yi1ac";
         const publicKey = "WVIP6H-6-AW8sHp9L";
 
@@ -94,7 +94,7 @@ const Contact = () => {
                     United States
                     <br />
                     Tulsa, Oklahoma 74135
-                    <span>sunyata0601.test@gmail.com</span>
+                    <span>sunyata0601@gmail.com</span>
                 </div>
                 <div className="map-wrap">
                     <MapContainer center={[36.153980, -95.992775]} zoom={13}>
